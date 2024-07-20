@@ -11,5 +11,6 @@ describe(('contact fields tests'), () => {
         cy.get('[data-cy="contact-btn-submit"]').then((element) => {
             expect(element).to.not.have.attr('disabled');
         });
+        cy.screenshot();
     });
 });
