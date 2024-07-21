@@ -1,4 +1,4 @@
-describe('pages navigation', { defaultCommandTimeout: 5000 }, () => {
+describe('pages navigation', { browser: 'firefox', defaultCommandTimeout: 5000 }, () => {
     it('should navigate between pages', () => {
         cy.visit('http://localhost:5173/');
         cy.get('[data-cy="header-about-link"]').click();
