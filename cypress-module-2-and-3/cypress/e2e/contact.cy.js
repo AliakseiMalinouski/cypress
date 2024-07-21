@@ -1,5 +1,3 @@
-/// <reference  types="Cypress"/>
-
 describe(('contact fields tests'), () => {
     it('button submit as', () => {
         cy.visit('http://localhost:5173/');

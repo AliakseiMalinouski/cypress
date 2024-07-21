@@ -1,6 +1,4 @@
-/// <reference  types="Cypress"/>
-
-describe('pages navigation', () => {
+describe('pages navigation', { defaultCommandTimeout: 5000 }, () => {
     it('should navigate between pages', () => {
         cy.visit('http://localhost:5173/');
         cy.get('[data-cy="header-about-link"]').click();
