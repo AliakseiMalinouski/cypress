@@ -5,7 +5,7 @@ describe(('contact fields tests'), () => {
         cy.visit('/');
     });
     it('button submit as', () => {
-        cy.get('[data-cy="contact-btn-submit"]').as('submitButton');
+        cy.getById('contact-btn-submit').as('submitButton');
         cy.get('@submitButton').should('have.attr', 'type');
         cy.submitForm();
     });
