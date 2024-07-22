@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />  
+
 describe('pages navigation', { browser: 'firefox', defaultCommandTimeout: 5000 }, () => {
     it('should navigate between pages', () => {
         cy.visit('/');
