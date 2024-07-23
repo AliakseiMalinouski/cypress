@@ -14,5 +14,6 @@ describe(('contact fields tests'), () => {
             expect(element).to.not.have.attr('disabled');
         });
         cy.screenshot();
+        cy.task('dbConnect', 'contact.cy');
     });
 });
